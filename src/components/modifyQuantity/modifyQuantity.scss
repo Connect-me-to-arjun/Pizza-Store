@@ -1,0 +1,22 @@
+.modifyQuantity {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+  margin: auto;
+  background: #d6d6d6;
+  border-radius: 2px;
+  padding: 10px;
+  cursor: pointer;
+  .addQuantity {
+    color: green;
+  }
+  .removeQuantity {
+    color: red;
+  }
+  .disabled {
+    pointer-events: none;
+  }
+  .Quantity {
+    color: black;
+  }
+}

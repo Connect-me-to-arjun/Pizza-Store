@@ -1,0 +1,19 @@
+.cartCard {
+  background-image: linear-gradient(to right, #050505 0%, #4d4c4c);
+  width: 98%;
+  margin: auto;
+  border-radius: 5px;
+  margin: 15px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+
+  .modifycart {
+    width: 20%;
+    align-self: center;
+  }
+  .cartCardMeta {
+    margin: 0px;
+    color: white;
+  }
+}
