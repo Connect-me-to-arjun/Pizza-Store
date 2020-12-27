@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from "react";
 import { connect } from "react-redux";
+// Components
 import {
   MDBContainer,
   MDBBtn,
@@ -10,6 +11,7 @@ import {
   MDBIcon
 } from "mdbreact";
 import { RadioGroup, ReversedRadioButton } from "react-radio-buttons";
+// Actions
 import { closeItemModal } from "../../redux/actions/selectedItem";
 import { addCartItem } from "../../redux/actions/cart";
 

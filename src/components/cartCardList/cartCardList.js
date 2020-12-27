@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+// Components
 import CartCard from "../cartCards/cartCards";
 class cartCardList extends Component {
   render() {

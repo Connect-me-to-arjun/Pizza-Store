@@ -1,9 +1,11 @@
 import React, { Component, Fragment } from "react";
 import { connect } from "react-redux";
-import { gettAllMenuItems } from "../../redux/actions/allItems";
+// Components
 import CardList from "../../components/cardsList/CardsList";
 import ItemFilters from "../../components/itemFilters/itemFilters";
 import CustomiseItem from "../../components/customiseItem/customiseItem";
+// Actions
+import { gettAllMenuItems } from "../../redux/actions/allItems";
 class home extends Component {
   componentDidMount() {
     const { getItems } = this.props;

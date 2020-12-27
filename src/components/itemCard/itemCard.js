@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+// Components
 import {
   MDBBtn,
   MDBCard,
@@ -10,8 +11,9 @@ import {
   MDBIcon
 } from "mdbreact";
 import ModifyQuantity from "../modifyQuantity/modifyQuantity";
-// Action
+// Actions
 import { setSelectedItem } from "../../redux/actions/selectedItem";
+// Css
 import "./itemCard.scss";
 
 class Cards extends Component {

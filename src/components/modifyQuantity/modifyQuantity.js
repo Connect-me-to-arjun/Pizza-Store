@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import "./modifyQuantity.scss";
+// Actions
 import { incrementCart, decrementCart } from "../../redux/actions/cart";
+// Css
+import "./modifyQuantity.scss";
 class modifyQuantity extends Component {
   incrementQuantity = () => {
     const { id } = this.props.itemData;

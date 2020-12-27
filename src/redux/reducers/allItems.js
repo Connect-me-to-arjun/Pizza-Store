@@ -15,7 +15,7 @@ const AllItemsReducer = (state = initialState, action) => {
     case GET_ALL_ITEMS_FAILURE:
       return { ...state };
     case SET_FILTERED_DATA:
-      return { ...state, items: action.payload };
+      return { ...state, items: [...action.payload] };
     default:
       return { ...state };
   }

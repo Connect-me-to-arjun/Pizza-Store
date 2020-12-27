@@ -1,6 +1,8 @@
 import React, { Component } from "react";
+// Components
 import { MDBCardText } from "mdbreact";
 import ToggleSwitch from "../../toggleSwitch/toggleSwitch";
+// Css
 import "./vegNonVeg.scss";
 
 class vegNonVeg extends Component {

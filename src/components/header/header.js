@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+// Components
 import {
   MDBNavbar,
   MDBNavbarBrand,
@@ -25,7 +26,7 @@ class NavbarPage extends Component {
       <MDBNavbar className="unique-color" expand="md">
         <MDBNavbarBrand>
           <MDBNavLink to="/" className="white-text">
-            <strong className="white-text">Order Pizza</strong>
+            <strong className="white-text">Pizza Store</strong>
           </MDBNavLink>
         </MDBNavbarBrand>
         <MDBNavbarNav right>

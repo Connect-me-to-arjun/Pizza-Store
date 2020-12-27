@@ -1,14 +1,19 @@
 import React, { Component } from "react";
-import Switch from "react-switch";
 import { connect } from "react-redux";
+// Components
+import Switch from "react-switch";
+// Switch color constants
 import {
   on_color,
   off_color,
   Off_ring_color,
   On_ring_color
 } from "./toggleSwitchColors";
-import { setFilteredData } from "../../redux/actions/allItems";
-import { gettAllMenuItems } from "../../redux/actions/allItems";
+// Actions
+import {
+  setFilteredData,
+  gettAllMenuItems
+} from "../../redux/actions/allItems";
 
 class ToggleSwitch extends Component {
   constructor() {

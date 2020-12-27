@@ -1,5 +1,7 @@
 import React from "react";
+// Components
 import ItemCard from "../itemCard/itemCard";
+
 const CardsList = props => {
   const { data } = props;
   return (

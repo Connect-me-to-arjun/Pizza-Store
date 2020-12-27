@@ -1,7 +1,9 @@
 import React, { Component } from "react";
-import "./cartCards.scss";
+// Components
 import { MDBCardTitle, MDBCardText, MDBIcon } from "mdbreact";
 import ModifyQuantity from "../modifyQuantity/modifyQuantity";
+// Css
+import "./cartCards.scss";
 class cartCards extends Component {
   getToppingsList = () => {
     const { toppings } = this.props;
@@ -12,7 +14,7 @@ class cartCards extends Component {
     return toppingsString;
   };
   render() {
-    const { name, price, size, isVeg, id } = this.props;
+    const { name, price, size, isVeg } = this.props;
 
     return (
       <div className="cartCard">
