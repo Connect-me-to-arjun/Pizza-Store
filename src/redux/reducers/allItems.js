@@ -1,11 +1,13 @@
 import {
   GET_ALL_ITEMS_SUCCESS,
   GET_ALL_ITEMS_FAILURE,
-  SET_FILTERED_DATA
+  SET_FILTERED_DATA,
+  SET_SEARCH_FILTERED
 } from "../stringConstants";
 
 const initialState = {
-  items: []
+  items: [],
+  searchFiltered: []
 };
 
 const AllItemsReducer = (state = initialState, action) => {
@@ -16,6 +18,8 @@ const AllItemsReducer = (state = initialState, action) => {
       return { ...state };
     case SET_FILTERED_DATA:
       return { ...state, items: [...action.payload] };
+    case SET_SEARCH_FILTERED:
+      return { ...state, searchFiltered: [...action.payload] };
     default:
       return { ...state };
   }

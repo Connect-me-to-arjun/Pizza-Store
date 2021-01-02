@@ -4,7 +4,8 @@ import {
   GET_ALL_ITEMS,
   GET_ALL_ITEMS_SUCCESS,
   GET_ALL_ITEMS_FAILURE,
-  SET_FILTERED_DATA
+  SET_FILTERED_DATA,
+  SET_SEARCH_FILTERED
 } from "../stringConstants";
 
 const getAllItems = () => {
@@ -30,6 +31,19 @@ const filteredData = data => {
   return {
     type: SET_FILTERED_DATA,
     payload: data
+  };
+};
+
+const setSearchFiltered = data => {
+  return {
+    type: SET_SEARCH_FILTERED,
+    payload: data
+  };
+};
+
+export const setSearchedData = data => {
+  return dispatch => {
+    dispatch(setSearchFiltered(data));
   };
 };
 
